@@ -1,0 +1,21 @@
+html
+  head
+    meta(charset = "utf-8")
+    title Mongo
+    link(rel="stylesheet" href="style.css")
+  body
+    .container
+      h1#idexample Dog Roster
+      p#classexample Dog Check In / Check Out
+      br
+
+      table
+          h2 Name:  #{dog.name}
+          br
+          h2 Breed: #{dog.breed}
+          br
+          h2 Age: #{dog.age}
+          br
+          h2 Actions: 
+            a(href="/edit/"+dog._id) Edit | 
+            a(href="/destroy/"+dog._id) Destroy
